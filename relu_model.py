@@ -61,6 +61,7 @@ history = model.fit(X_train, y_train, epochs=10, batch_size=1000, validation_dat
 train_loss, train_acc = model.evaluate(X_train, y_train, verbose=2)
 test_loss, test_acc = model.evaluate(X_test, y_test, verbose=2)
 
+# Print loss and accuracy results
 print(f"Final Train Loss: {train_loss:.4f}, Train Accuracy: {train_acc:.4f}")
 print(f"Final Test Loss: {test_loss:.4f}, Test Accuracy: {test_acc:.4f}")
 
